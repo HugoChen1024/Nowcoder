@@ -3,7 +3,9 @@ using namespace std;
 int main()
 {
 	int i = 1, A, B, C, T;
-	cin >> T;
+	while(cin >> T)
+	{
+		//cin >> T;
 	while (T>10)
 	{
 		std::cout << "ÇëÊäÈëcount<=10";
@@ -13,22 +15,25 @@ int main()
 	while (i <= T)
 	{
 		cin >> A >> B >> C;
-		result[i] = (A + B > C) ? true : false;
+		result[i] = (A  > C -B) ? true : false;
 		i++;
 	}
 	for (int i = 1; i <= T; i++)
 	{
 		if (result[i])
 		{
-			std::cout << "Case #" << i << ":true";
+			std::cout << "Case #" << i << ": true";
 		}
 		else
 		{
-			std::cout << "Case #" << i << ":false";
+			std::cout << "Case #" << i << ": false";
 		}
 		std::cout << endl;
 	}
 	delete[] result;
+		
+	}
+	
 	return 0;
 }
 
