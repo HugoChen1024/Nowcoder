@@ -39,6 +39,23 @@
 //	delete pb;
 //}
 
+/*****************************************************
+* \file Palindrome listNode.cpp
+* \date 2016/05/05 17:16
+
+题目描述
+
+请编写一个函数，检查链表是否为回文。
+给定一个链表ListNode* pHead，请返回一个bool，代表链表是否为回文。
+测试样例：
+{1,2,3,2,1}
+返回：true
+{1,2,3,2,3}
+
+返回：false
+
+*****************************************************/
+
 struct ListNode
 {
 	int val;
@@ -56,7 +73,25 @@ public:
 	bool isPalindrome(ListNode* pHead) {
 		// write code here
 		ListNode *pNode = pHead;
-		stack s;
-
+		stack<int> s;
+		while (pNode)
+		{
+			s.push(pNode->val);
+			pNode = pNode->next;
+		}
+		pNode = pHead;
+		while (pNode)
+		{
+			if (pNode->val==s.top())
+			{
+				pNode=pNode->next;
+				s.pop();
+			}
+			else
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 };
