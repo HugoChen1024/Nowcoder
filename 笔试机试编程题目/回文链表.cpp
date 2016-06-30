@@ -23,8 +23,7 @@ class PalindromeList {
 public:
 	bool chkPalindrome(ListNode* A) {
 		// write code here
-		ListNode* pHead = nullptr;
-	    ListNode* pNode=nullptr;
+	
 		ListNode* pSlow = A;
 		ListNode* pQucik = A;
 		//快慢指针找到中间节点
@@ -35,7 +34,9 @@ public:
 			
 		}
 		//将中点结点后的指针反转
+		ListNode* pNode = nullptr;
 		pNode = pSlow->next;
+		ListNode* pHead = pSlow;  //反转链表的头
 		while (pNode!=nullptr)
 		{
 			ListNode* temp = pNode;
@@ -43,9 +44,9 @@ public:
 			temp->next = pHead;
 			pHead = temp;
 		}
-		while (A->next!=pHead)
+		while (A!=pHead)
 		{
-			if (A->next->val!=pHead->val)
+			if (A->val!=pHead->val)
 			{
 				return false;
 			}
@@ -58,12 +59,23 @@ public:
 
 class PalindromeList1 {
 public:
-	bool chkPalindrome(ListNode* A) {
+	bool chkPalindrome(ListNode* A) {  //A不带头节点
 		// write code here
 		if (A == nullptr || A->next == nullptr)
 			return true;
 		ListNode* head = nullptr;
 		ListNode* node = A;
+
+	/*	//将中间节点后的指针反转        
+		ListNode* p = slow->next;
+		ListNode* p1 = p->next;
+		while (p != NULL){
+			p->next = slow;
+			slow = p;
+			p = p1;
+			p1 = p1->next;
+		}*/
+
 		while (node != nullptr){
 			ListNode* temp = node;
 			node = node->next;
@@ -92,7 +104,7 @@ void print(ListNode* pHead)
 	ListNode*pNode = pHead->next;
 	while (pNode)
 	{
-		printf("%-d ->", pNode->val);
+		printf("%d ->", pNode->val);
 		pNode = pNode->next;
 	}
 	cout << "NULL\n";
