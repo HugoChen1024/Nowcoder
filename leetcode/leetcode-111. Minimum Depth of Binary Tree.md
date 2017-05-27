@@ -1,21 +1,21 @@
-- Æ½Ê±Á·Ï°Ò»ÏÂleetcode
+- å¹³æ—¶ç»ƒä¹ ä¸€ä¸‹leetcode
 
-- ÏÈ¸ù¾ÝÅ£¿ÎÍøÉÏÌâÁ·Ï°£¬Í¬²½[leetcode¹ÙÍø](https://leetcode.com/)
+- å…ˆæ ¹æ®ç‰›è¯¾ç½‘ä¸Šé¢˜ç»ƒä¹ ï¼ŒåŒæ­¥[leetcodeå®˜ç½‘](https://leetcode.com/)
 
-## ÌâÄ¿
+## é¢˜ç›®
 
 - Given a binary tree, find its minimum depth.The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
 
-## Ë¼Â·
+## æ€è·¯
 
-- ±¾ÌâÒª×¢Òâ×îÐ¡Éî¶ÈÓë×î´óÉî¶ÈµÄÇø±ð:¶ÔÓÚ×î´óÉî¶È,²»ÐèÒª¿¼ÂÇµ±Ç°×ÓÊ÷ÊÇ·ñÎªµ¥×ÓÊ÷£¨¼´Ò»²àÊ÷Éî¶ÈÎª0£©µÄÇé¿ö£¬¼´×î´óÉî¶ÈÒ»Ö±µÈÓÚ×óÓÒ×ÓÊ÷µÄ×î´óÖµ£»¶ÔÓÚ×îÐ¡Éî¶È£¬ÐèÒª¿¼ÂÇµ±Ç°×ÓÊ÷ÊÇ·ñÎªµ¥×ÓÊ÷µÄÇé¿ö£¬¶ÔÓÚË«×ÓÊ÷£¬Æä×îÐ¡Éî¶ÈÎª×óÓÒ×ÓÊ÷µÄ×îÐ¡Öµ£¬¶ÔÓÚµ¥×ÓÊ÷£¬Æä×îÐ¡Éî¶ÈÎª×óÓÒÉî¶ÈµÄ×î´óÖµ£¨ÒòÎªÒ»²àµÄ×ÓÊ÷Îª0£©.
+- æœ¬é¢˜è¦æ³¨æ„æœ€å°æ·±åº¦ä¸Žæœ€å¤§æ·±åº¦çš„åŒºåˆ«:å¯¹äºŽæœ€å¤§æ·±åº¦,ä¸éœ€è¦è€ƒè™‘å½“å‰å­æ ‘æ˜¯å¦ä¸ºå•å­æ ‘ï¼ˆå³ä¸€ä¾§æ ‘æ·±åº¦ä¸º0ï¼‰çš„æƒ…å†µï¼Œå³æœ€å¤§æ·±åº¦ä¸€ç›´ç­‰äºŽå·¦å³å­æ ‘çš„æœ€å¤§å€¼ï¼›å¯¹äºŽæœ€å°æ·±åº¦ï¼Œéœ€è¦è€ƒè™‘å½“å‰å­æ ‘æ˜¯å¦ä¸ºå•å­æ ‘çš„æƒ…å†µï¼Œå¯¹äºŽåŒå­æ ‘ï¼Œå…¶æœ€å°æ·±åº¦ä¸ºå·¦å³å­æ ‘çš„æœ€å°å€¼ï¼Œå¯¹äºŽå•å­æ ‘ï¼Œå…¶æœ€å°æ·±åº¦ä¸ºå·¦å³æ·±åº¦çš„æœ€å¤§å€¼ï¼ˆå› ä¸ºä¸€ä¾§çš„å­æ ‘ä¸º0ï¼‰.
 
 ## Nowcoder 
 
 ```C++
 class Solution {
 public:
-    int run(TreeNode *root) {  //Ò¶×Ó½áµã²Å¼ÇÂ¼Éî¶È£¬È»ºó²»¶Ï¸üÐÂ
+    int run(TreeNode *root) {  //å¶å­ç»“ç‚¹æ‰è®°å½•æ·±åº¦ï¼Œç„¶åŽä¸æ–­æ›´æ–°
         if(root==nullptr)
             return 0;
         int l_depth=0,r_depth=0;
