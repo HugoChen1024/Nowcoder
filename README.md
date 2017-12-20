@@ -6,3 +6,11 @@
 
 - 在这里既可以巩固基础知识，又可以锻炼自己的coding 能力。
 - 由于现在平时比较忙，主要精力在基本的编程能力实现和新知识的学习上，加上平时做项目，可能要等到明年才能才是继续更新了.....
+
+
+## 2017/12/20
+
+- 快到年尾了，开始刷起来
+- 努力找个好实习！！！
+- LeetCode:[LeetCode Online Judge刷题题解](https://github.com/liuchuo/LeetCode)
+- [LeetCode-Zhu Li](http://www.cnblogs.com/zhuli19901106/tag/LeetCode/)
