@@ -14,3 +14,4 @@
 - 努力找个好实习！！！
 - LeetCode:[LeetCode Online Judge刷题题解](https://github.com/liuchuo/LeetCode)
 - [LeetCode-Zhu Li](http://www.cnblogs.com/zhuli19901106/tag/LeetCode/)
+- [LeetCode](https://github.com/codingtmd/leetcode/tree/master/src)
