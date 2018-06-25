@@ -6,5 +6,5 @@
 
 ## project
 
--自己的题解vs2013工程：[ranjiewwen/leetcode_project](https://github.com/ranjiewwen/leetcode_project)
+- 自己的题解vs2013工程：[ranjiewwen/leetcode_project](https://github.com/ranjiewwen/leetcode_project)
 
