@@ -1,6 +1,6 @@
 # Nowcoder  [个人主页](https://www.nowcoder.com/profile/773262)
 
-- 牛课网练习，主要包括剑指offer，Cracking the Coding Interview，PAT，华为上机测试，算法课程学习，一些公司笔试题目等。
+- 牛课网练习，主要包括剑指offer，Cracking the Coding Interview，BAT，华为上机测试，算法课程学习，一些公司笔试题目等。
 
 ![](https://github.com/ranjiewwen/Nowcoder/blob/master/images/%E7%BB%83%E4%B9%A0.png)
 
